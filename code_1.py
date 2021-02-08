@@ -1,5 +1,4 @@
 import tkinter as tk
-
+root = tk.Tk()
 print("a")
-
- 1 2 3 4 5
+root.mainloop()
