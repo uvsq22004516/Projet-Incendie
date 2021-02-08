@@ -3,7 +3,7 @@
 # groupe DLMP 
 # Gabriel CHAMPENOIS
 # Alexis BODEN
-# Lucas LEMARCHAL
+# Lucas LEMARECHAL
 # Djenna SEDDOUGUI
 # Lucien SAVEY
 # Alberic BEAUSSANT
