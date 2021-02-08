@@ -4,5 +4,3 @@ root.title("code1")
 print("a")
 
 root.mainloop()
-
-
