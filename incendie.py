@@ -22,11 +22,18 @@ root = tk.Tk()
 root.title("Simulation d'incendie (IN200 - projet n°1)")
 
 
+
+
+
 ################## définition des constantes (en MAJ) #######################
 WIDTH = 1000
 HEIGHT = 650
-DUREE_FEU = 0
-DUREE_CENDRE = 0
+"""DUREE_FEU = 
+DUREE_CENDRE = """
+
+
+
+
 
 ################## définition des variables globales #######################
 """Eau 	            Bleu 	   + ∞
@@ -35,6 +42,10 @@ DUREE_CENDRE = 0
    Prairie 	         Jaune 	Dépend des voisins
    Cendres tièdes 	Gris 	   Constante DUREE_CENDRE
    Cendres éteintes 	Noir 	   + ∞"""
+
+
+
+
 
 
 ################## définition des fonctions (avec docstring) #######################
@@ -57,6 +68,11 @@ def debut_simulation():
 def arret_simulation():
    pass
 
+
+
+
+
+
 ################## définition des widgets ##################
 
 terrain = tk.Canvas(root, height=HEIGHT, width=WIDTH, bg="white")
@@ -69,6 +85,17 @@ effectuer_Etape = tk.Button(root, command=effect_etape, text="Effectuer une éta
 demarrer_Simulation = tk.Button(root, command=debut_simulation, text="Démarrer la simulation", font=("Times", "10", "bold"), relief="ridge", bd=5)
 arreter_Simulation = tk.Button(root, command=arret_simulation, text="Arrêter la simulation",font=("Times", "10", "bold"), relief="ridge", bd=5)
 
+###cadrillage#######################################################
+for i in range(0, WIDTH, 25):
+   for j in range(0, HEIGHT, 25):
+      terrain.create_rectangle((i,j), (i+25, j+25), outline="black")
+####################################################################
+
+
+
+
+
+
 ################## événements liés aux widgets et appel à la boule de gestion des événements #######################
 
 terrain.grid(column=1, columnspan=2, row=0, rowspan=3)
@@ -78,6 +105,9 @@ charger_Terrain.grid(column=0, row=2)
 effectuer_Etape.grid(column=3, row=1)
 demarrer_Simulation.grid(column=1, row=3)
 arreter_Simulation.grid(column=2, row=3)
+
+
+
 
 
 
